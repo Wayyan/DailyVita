@@ -1,0 +1,143 @@
+[versions]
+android-plugin = "8.1.1"
+kotlin = "1.9.10"
+compose = "1.5.1"
+compose-material3 = "1.2.0-alpha12"
+lifcycle = "2.6.2"
+koin = "3.4.3"
+moshi = "1.15.0"
+mockito = "3.0.0"
+androidx-test = "1.5.2"
+androidx-text-ext = "1.1.5"
+androidx-arch = "2.1.0"
+coroutine = "1.7.3"
+desugar-jdk-libs = "2.0.4"
+appcompat = "1.6.1"
+material = "1.10.0"
+compose-destination = "1.9.55"
+
+[libraries]
+kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlin" }
+kotlin-coroutine-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutine" }
+kotlin-gradle = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+
+androidx-core = { module = "androidx.core:core-ktx", version = "1.12.0" }
+androidx-work-runtime = { group = "androidx.work", name = "work-runtime-ktx", version = "2.8.1" }
+androidx-multidex = { module = "androidx.multidex:multidex", version = "2.0.1" }
+
+compose-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "compose" }
+compose-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview", version.ref = "compose" }
+
+compose-material = { group = "androidx.compose.material", name = "material", version.ref = "compose" }
+compose-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "compose-material3" }
+compose-material3-window = { group = "androidx.compose.material3", name = "material3-window-size-class", version.ref = "compose-material3" }
+
+compose-ui-tool = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "compose" }
+compose-test-manifast = { group = "androidx.compose.ui", name = "ui-test-manifest", version.ref = "compose" }
+compose-test = { group = "androidx.compose.ui", name = "ui-test-junit4", version.ref = "compose" }
+
+compose-activity = { module = "androidx.activity:activity-compose", version = "1.5.1" }
+compose-navigation = { module = "androidx.navigation:navigation-compose", version = "2.5.2" }
+compose-constraint = { module = "androidx.constraintlayout:constraintlayout-compose", version = "1.1.0-alpha03" }
+compose-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifcycle" }
+
+compose-lifecycle = {module="androidx.lifecycle:lifecycle-runtime-compose",version.ref = "lifcycle"}
+
+compose-destination-core = {group = "io.github.raamcosta.compose-destinations",name = "core",version.ref = "compose-destination"}
+compose-destination-ksp = {group = "io.github.raamcosta.compose-destinations",name = "ksp",version.ref = "compose-destination"}
+
+#di-koin-gradle = { group = "io.insert-koin", name = "koin-gradle-plugin", version = "3.4.2" }
+di-koin-core = { group = "io.insert-koin", name = "koin-core", version.ref = "koin" }
+di-koin-compose = { group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koin" }
+di-koin-test = { group = "io.insert-koin", name = "koin-test", version.ref = "koin" }
+di-koin-android = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
+di-koin-workmanager = { group = "io.insert-koin", name = "koin-androidx-workmanager", version.ref = "koin" }
+
+mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mockito" }
+mockito-android = { group = "org.mockito", name = "mockito-android", version.ref = "mockito" }
+mockito-inline = { group = "org.mockito", name = "mockito-inline", version.ref = "mockito" }
+mockito-kotlin = { module = "com.nhaarman.mockitokotlin2:mockito-kotlin", version = "2.2.0" }
+
+test-core = { group = "androidx.test", name = "core", version.ref = "androidx-test" }
+test-core-ktx = { group = "androidx.test", name = "core-ktx", version = "1.5.0" }
+test-runner = { group = "androidx.test", name = "runner", version.ref = "androidx-test" }
+test-rules = { group = "androidx.test", name = "rules", version = "1.5.0" }
+test-roboletric = { module = "org.robolectric:robolectric", version = "4.4-alpha-5" }
+
+test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-text-ext" }
+test-ext-junitktx = { group = "androidx.test.ext", name = "junit-ktx", version.ref = "androidx-text-ext" }
+test-ext-truth = { group = "androidx.test.ext", name = "truth", version = "1.6.0-alpha01" }
+test-ext-espresso = { module = "androidx.test.espresso:espresso-core", version = "3.5.1" }
+
+moshi-core = { group = "com.squareup.moshi", name = "moshi", version.ref = "moshi" }
+moshi-adapters = { group = "com.squareup.moshi", name = "moshi-adapters", version.ref = "moshi" }
+moshi-kotlin = { group = "com.squareup.moshi", name = "moshi-kotlin", version.ref = "moshi" }
+moshi-codegen = { group = "com.squareup.moshi", name = "moshi-kotlin-codegen", version.ref = "moshi" }
+
+common-junit = { module = "junit:junit", version = "4.13.2" }
+common-timber = { module = "com.jakewharton.timber:timber", version = "4.7.1" }
+
+desugar_jdk_libs = { module = "com.android.tools:desugar_jdk_libs", version.ref = "desugar-jdk-libs" }
+
+androidx-arch-common = { module = "androidx.arch.core:core-common", version = "2.2.0" }
+androidx-arch-testing = { module = "androidx.arch.core:core-testing", version = "2.2.0" }
+androidx-annotation = { module = "androidx.annotation:annotation", version = "1.7.0" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "android-plugin" }
+android-library = { id = "com.android.library", version.ref = "android-plugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+kotlin-ksp = { id = "com.google.devtools.ksp", version = "1.9.10-1.0.13" }
+
+
+[bundles]
+moshi = [
+    "moshi-core",
+    "moshi-adapters",
+    "moshi-kotlin"
+]
+
+koin-android = [
+    "di-koin-android",
+    "di-koin-workmanager"
+]
+
+koin-compose = [
+    "di-koin-compose",
+    "di-koin-workmanager"
+]
+
+mockito = [
+    "mockito-core",
+    "mockito-inline",
+    "mockito-kotlin"
+]
+
+androidx-test = [
+    "test-core-ktx",
+    "test-runner",
+    "test-rules",
+    "test-ext-junitktx",
+    "test-ext-truth",
+    "androidx-arch-testing"
+]
+
+compose = [
+    "compose-ui",
+    "compose-preview",
+    "compose-material",
+    "compose-activity",
+    "compose-constraint",
+    "compose-material3",
+    "compose-material3-window",
+    "compose-lifecycle"
+]
+
+compose-debug = [
+    "compose-ui-tool",
+    "compose-test-manifast"
+]
